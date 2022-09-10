@@ -1,0 +1,130 @@
+import java.lang.*;
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        //String non-primitive datatype
+        //java.lang
+        //immutable
+        //String litteral ----> String a="Ezhil raj";----->stored in string constant pool(scp)
+        //String s2=new String("java");------------>Stored in heap memory
+        String a="  Ezhil raj  ";
+        String b=" ";
+        String c="";
+        System.out.println(a.length());
+        System.out.print(a.isBlank());System.out.println(b.isBlank());
+        System.out.print(a.isEmpty());System.out.print(b.isEmpty()); System.out.println(c.isEmpty());
+        System.out.println("/////////////////");
+        //object1.equals(object2)
+        String s1="ezhil";
+        String s2="ezhil";
+        String s3=new String("ezhil");String s4=new String("ezhil");
+        if(s1==s2){
+            System.out.println("s1 and s2 equal");
+        }
+        if(s1!=s3){
+            System.out.println("s1 and s3 are not equal because the memory location is different that why we use equals method");
+        }
+        if(s1.equals(s3)){
+            System.out.println("here we got s1 and s3 are equal");
+        }
+        if(s3!=s4){
+            System.out.println("heap memory object compared through equals method");
+        }
+        System.out.println("////////////////////////////");
+        String a1=new String("java");
+        String a2=new String("java");
+        String a3=new String("Java");
+        String a4=new String("phpjava");
+        StringBuffer sb=new StringBuffer("java");
+        System.out.print(a1.equals(a2));System.out.println(a1.equals(a3));
+        System.out.println(a1.equalsIgnoreCase(a3));
+        //lexicography -->alpabetical order use compareto
+        System.out.print(a1.compareTo(a3)+"\t");
+        System.out.println(a1.compareToIgnoreCase(a3));
+        System.out.print(a1.startsWith("j")+"\t");
+        System.out.print(a1.endsWith("a")+"\t");
+        System.out.println(a4.startsWith("java",3));
+        System.out.println(a1.contentEquals(sb));//contentequal used for charactersequence and stringbuffer
+        System.out.println("/////////searching method///////////");
+        String c1="Ezhilrajl";
+        System.out.print( c1.indexOf('a')+"\t");
+        System.out.print(c1.indexOf("raj")+"\t");
+        System.out.print(c1.indexOf('l',5)+"\t");//l next to 5 position
+        System.out.print(c1.indexOf("jl",5)+"\t");
+        System.out.print(c1.lastIndexOf('l')+"\t");
+        System.out.print(c1.lastIndexOf('a',5)+"\t");
+        System.out.println(c1.lastIndexOf("raj",8)+"\t");
+        System.out.println("/////////////////////////////");
+        String c2="ezhil raj raj ezhil";
+        System.out.print(c2.substring(10)+"\t");
+        System.out.println(c2.substring(10,16)+"\t");   System.out.print(c2.subSequence(0,16)+"\t");//sub sequnce return charSequence
+        System.out.println("///////////////////////////");
+        String d2=" Ezhil Raj raj ezhil  ";
+        System.out.println(d2.toLowerCase());
+        System.out.println(d2.toUpperCase());
+        System.out.println(d2.strip());//strip is ubdated of trim difference is trim is used for ISO and ASOI character
+        System.out.println(d2.trim());// while Strip is used for unicode
+        System.out.println(d2.stripLeading());//remove the space in front side
+        System.out.println(d2.stripTrailing());//remove the space in backside
+        System.out.println(d2.repeat(3));
+        System.out.println(d2.indent(20));
+        System.out.println("/////////////////////////////////////////");
+        System.out.println(d2.matches(" \\w{5} \\w{3} \\w{3} \\w{5}  "));//gape also important in matches
+        System.out.println(d2.replace('a','e'));
+        System.out.println(d2.replace("raj","reg"));
+        System.out.println(d2.replaceAll(" ","-"));//insted of double quorts we can use "\\s"
+        System.out.println(d2.replaceFirst(" ","+"));
+        System.out.println(d2.split(" "));
+        System.out.println(d2.split(" ",2));//limit is 2
+        System.out.println( String.join("-","18","01","2002"));
+        System.out.println(String.valueOf(5));
+        System.out.println(d2.contains("raj"));
+        System.out.println("////////////////////////");
+        StringBuffer sbk=new StringBuffer();//mutable class syncronised class
+        sbk.append(53);//string buffer once initialise all the method are wait but opposite is string builder
+        sbk.append(76);
+        sbk.deleteCharAt(1);
+        System.out.println(sbk);
+        System.out.println(sbk.reverse());
+        System.out.println(sbk.replace(0,1,"chennai"));
+        StringBuilder sb1=new StringBuilder();//
+        System.out.println("////////////////////////////////////////");
+        String word="Chennai 638014";
+        for(int i=0;i<word.length();i++){
+            if(word.charAt(i)>='0')
+                if(word.charAt(i)<='9') System.out.print(word.charAt(i));
+        }
+        System.out.println(word.replaceAll("[a-zA-Z]",""));
+        System.out.println(word.replaceAll("[0-9]",""));
+        String num="03454";
+        String  num2=num.replaceAll("[a-zA-z]","");
+        if(num.length()==num2.length()) System.out.println("only numbers");
+        String e1="ABBA";
+        String e2="";
+        for(int i=e1.length()-1;i>=0;i--)e2=e2+e1.charAt(i);
+        System.out.println(e2);
+        if(e1.equals(e2)) System.out.println("palindrom");
+        String e3="ezhil raj";
+        char[] ch=e3.toCharArray();
+        ch[0]=(char)(ch[0]-32);
+        for(int i=0;i<ch.length;i++) System.out.print(ch[i]);
+        //or
+        String c5=new String(ch);
+        System.out.println(c5);
+        System.out.println(e3.substring(0,1).toUpperCase()+e3.substring(1));
+        for(int i=0;i<e3.length();i++)
+        System.out.print(e3.substring(i,i+1).toUpperCase());
+        System.out.println("////////////////////////////");//String is litter because we can use the String without new keyword
+      Main ez=new Main();
+      String[] name={"ezhil","rajesh","ezhil raj"};
+      for(String v:name){
+          System.out.println(v);
+      }
+        System.out.println("vfrrrrrr");
+      StringBuffer ab=new StringBuffer();
+      ab.append(name);
+        System.out.println(Arrays.toString(name));
+    }
+}
+
