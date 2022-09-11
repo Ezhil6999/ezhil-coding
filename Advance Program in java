@@ -1,0 +1,29 @@
+1 Anonymous class with runable interfaces
+
+import java.lang.Runnable;
+import java.lang.Thread;
+import java.util.*;
+public class Main {
+    public static void main(String[] args)throws Exception  {
+        Runnable t1=new Runnable() {
+          public void run() {            //Runnable is a anonymous class subclass og runnable interface
+            for(int i=1;i<=10;i++) {
+              System.out.println("Hello Thread");
+                                   //in this we redefining run method
+            }
+          }
+        };
+        Runnable t2=new Runnable() {
+
+                public void run(){
+                    for(int i=1;i<=10;i++){
+                    System.out.println("Welcome thread");}
+                }
+
+        };
+ Thread tt1=new Thread(t1);
+ Thread tt2=new Thread(t2);
+ tt1.start();
+ tt2.start();
+    }
+}
