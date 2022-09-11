@@ -1,4 +1,4 @@
-1 Anonymous class with runable interfaces
+1 1  Anonymous class with runable interfaces
 
 import java.lang.Runnable;
 import java.lang.Thread;
@@ -25,5 +25,35 @@ public class Main {
  Thread tt2=new Thread(t2);
  tt1.start();
  tt2.start();
+    }
+}
+
+
+//2 program to demo anonymous class in multithreading with thread class
+
+import java.lang.Runnable;
+import java.lang.Thread;
+import java.util.*;
+public class Main {
+    public static void main(String[] args)throws Exception  {
+//   2 program to demo anonymous class in multithreading with thread class
+        Thread t1=new Thread("hello"){
+            @Override
+            public void run() {
+                 for(int i=0;i<=10;i++){
+                     System.out.println("thread  "+getName());
+                 }
+            }
+        };
+        Thread t2=new Thread(){
+            @Override
+            public void run() {
+                for(int i=0;i<=10;i++){
+                    System.out.println("\t\t\tthread  "+getName());
+                }
+            }
+        };
+        t1.start();
+        t2.start();
     }
 }
