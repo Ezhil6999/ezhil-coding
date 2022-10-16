@@ -1,0 +1,24 @@
+import java.util.*;
+import java.math.*;
+public class Hello {
+    public static void main(String args[]) {
+     StringJoiner sj=new StringJoiner(",","[","]");
+     sj.add("S");sj.add("J");
+        System.out.println(sj);
+        StringJoiner sj1=new StringJoiner(":");
+        sj1.add("E").add("Z").add("H");
+        System.out.println(sj.length());
+        sj.merge(sj1);
+        System.out.println(sj);
+        StringJoiner sj2=new StringJoiner(">");
+        sj2.setEmptyValue("HI Ezhil");     //temparavary value
+        System.out.println(sj2);
+        sj2.add("V");
+        System.out.println(sj2);
+        String h=sj.toString();
+        System.out.println(h);
+        System.out.println( sj2.hashCode());
+        System.out.println(sj2.getClass());
+        //has notify method,wait method
+    }
+}
