@@ -1,0 +1,52 @@
+import java.util.*;
+import java.math.*;
+public class Hello {
+    public static void main(String args[]) {
+        List<Integer> list = new ArrayList<>();
+        list.add(738);
+        list.add(959);
+        list.add(34);
+        list.add(730);
+        list.add(635);
+        System.out.println(list);
+        Collections.sort(list);
+        System.out.println(list);
+        list.forEach(System.out::println);
+        Iterator i = list.iterator();
+        while (i.hasNext()) {
+            System.out.print(i.next() + " ");
+        }
+        Collections.reverse(list);
+        System.out.println(list);
+        System.out.println("//////////////////////////////////////////////////");
+//       111111111111
+//        Comparator<Integer> com = (Integer o1, Integer o2) -> {
+//            if (o1 % 10 > o2 % 10) return 1;
+//            return -1;
+//        };
+//        Collections.sort(list, com);
+//        System.out.println(list);
+//       22222222222222222222222222
+//        Comparator<Integer> com = ( o1,  o2) -> {
+//            if (o1 % 10 > o2 % 10) return 1;
+//            return -1;
+//        };
+//        Collections.sort(list, com);
+//        System.out.println(list);
+//        3333333333333333333
+//        Comparator<Integer> com = ( o1,  o2) -> {
+//           return o1%10>o2%10?1:-1;
+//        };
+//        Collections.sort(list, com);
+//        System.out.println(list);
+//        444444444444;
+//        Collections.sort(list,  ( o1,  o2) -> {
+//            return o1%10>o2%10?1:-1;
+//        });
+//        5555555555555'
+        Collections.sort(list,  ( o1,  o2) -> {
+            return o1%10>o2%10?1:-1;
+        });
+        System.out.println(list);
+    }
+}
