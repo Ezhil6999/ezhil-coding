@@ -41,3 +41,27 @@ public class Hello {
        Drawable dr=( width) ->
             System.out.println("value "+width);
 
+
+ 
+                                                    or
+                                                    
+                                                    
+    import java.util.*;
+import java.math.*;//return statement
+import java.util.stream.Collectors;
+//(argument-list)->{ Implementation }---------->Lambda Expression syntax
+public class Hello {
+    public static void main(String args[]) {
+    Drawable dr=( width) -> {
+        String s="value " + width;
+        return s;
+    };
+        System.out.println(dr.draw(10));
+
+    }
+}
+public interface Drawable {
+    String draw(int width);
+
+}
+
