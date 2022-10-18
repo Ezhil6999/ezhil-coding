@@ -35,3 +35,9 @@ public class Hello {
     }
 }
 
+ 
+                                                    or
+                                                    
+       Drawable dr=( width) ->
+            System.out.println("value "+width);
+
