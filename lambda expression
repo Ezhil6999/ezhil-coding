@@ -1,0 +1,37 @@
+import java.util.*;
+import java.math.*;
+import java.util.stream.Collectors;
+//(argument-list)->{ Implementation }---------->Lambda Expression syntax
+public class Hello {
+    public static void main(String args[]) {
+    Drawable dr=new Drawable() {
+        @Override
+        public void draw(int width) {
+            System.out.println("value "+width);
+        }
+    };
+    dr.draw(23);
+    }
+}
+public interface Drawable {
+    void draw(int width);
+}
+ 
+ 
+                                                    or
+                                                    
+                                                    
+ import java.util.*;
+import java.math.*;
+import java.util.stream.Collectors;
+//(argument-list)->{ Implementation }---------->Lambda Expression syntax
+public class Hello {
+    public static void main(String args[]) {
+    Drawable dr=(int width) ->{
+            System.out.println("value "+width);
+        };
+    dr.draw(10);
+
+    }
+}
+
