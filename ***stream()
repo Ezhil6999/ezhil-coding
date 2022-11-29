@@ -1,0 +1,38 @@
+//stream().map()
+
+List<Integer> number = Arrays.asList(2,3,4,5);
+List square = number.stream().map(x ->x*x).collect(Collectors.toList());
+
+List<String> value= Arrays.asList("Ezhil","raj","E","z","r","S");
+List<String> v=value.stream().map(String::toUpperCase).collect(Collectors.toList());
+
+list.stream().map(str -> str.length()).forEach(System.out::println);
+
+//stream().filter()
+
+List<String> names = Arrays.asList("Reflection","Collection","Stream");
+List<String> result = names.stream().filter(s->s.startsWith("S")).collect(Collectors.toList());
+
+//stream().sorted()
+
+List<String> names = Arrays.asList("Reflection","Collection","Stream");
+List<String> result = names.stream().sorted().collect(Collectors.toList());
+
+//stream().collect()
+
+List<Integer> number = Arrays.asList(2,3,4,5,3);
+Set square = number.stream().map(x->x*x).collect(Collectors.toSet());
+//[16, 4, 9, 25]
+
+//stream().forEach()
+
+List<Integer> number = Arrays.asList(2,3,4,5);
+number.stream().map(x->x*x).forEach(y->System.out.println(y));
+        
+//stream().reduce()
+
+List<Integer> number = Arrays.asList(2,3,4,5);
+int even = number.stream().filter(x->x%2==0).reduce(0,(ans,i)-> ans+i);      //6
+
+
+
