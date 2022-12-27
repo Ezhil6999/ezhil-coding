@@ -1,0 +1,34 @@
+class Bank {
+//    SELECTION SORT :
+//            4 10 12 5 20
+//            4 10 12 5 20
+//            4 5 12 10 20......
+//    n+(n-1)+...+1
+//
+//    n(n-1)/2---> time complexity
+    public static void main(String[] args) {
+        int arr[]={2,5,3,5,1,6,2,4,6,5,3,1};
+        sele(arr);
+        for(int i:arr){
+            System.out.print(i);
+        }
+     }
+
+    private static int[] sele(int[] arr) {
+
+        for(int j=0;j< arr.length;j++){
+            int smal=arr[j];
+           for(int i=j;i<arr.length;i++){
+            if (smal>arr[i]){
+                smal=arr[i];
+                int temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+                System.out.println(arr[i]+"   "+i);
+            }
+
+        }}
+
+        return arr;
+    }
+}
