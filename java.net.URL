@@ -1,0 +1,23 @@
+import java.net.MalformedURLException;
+import java.util.Scanner;
+import java.lang.String;
+import java.net.URL;
+class Main{
+    public static void main(String[] args) throws MalformedURLException {
+        String url="https://www.example.com/index.html";
+        URL parseurl=new URL(url);
+        String path=parseurl.getPath();
+        String host=parseurl.getHost();
+        int port=parseurl.getPort();
+        System.out.println(path);
+        System.out.println(host);
+        System.out.println(port);
+        if(port==-1){
+            port=parseurl.getDefaultPort();
+        }
+        String protocol=parseurl.getProtocol();
+        System.out.println(port);
+        System.out.println(protocol);
+    }
+
+}
