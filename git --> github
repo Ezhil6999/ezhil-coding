@@ -1,0 +1,145 @@
+ git init
+  882  git add .
+  883  git status
+  884  git push origin master
+  885  conda deactivate
+  886  git push origin master
+  887  git status
+  888  git branch
+  889  git switch main
+  890  git checkout main
+  891  git branch main
+  892  git branch
+  893  git switch main
+  894  git branch
+  895  git add .
+  896  git commit -m 'hi"
+'
+  897  git status
+  898  git commit -m 'hi'
+  899  git add .
+  900  git status
+  901  ls
+  902  git add test1.py 
+  903  git commit -m 'hi'
+  904  git push origin main
+  905  git status -s
+  906  git init
+  907  ls
+  908  git add test1.py 
+  909  cd
+  910  cd ..
+  911  cd
+  912  cd Desktop/
+  913  cd git
+  914  cd ..
+  915  cd gits
+  916  ls
+  917  git add .
+  918  git status
+  919  git commit -m 'first commit
+'
+  920  git status -s
+  921  git status 
+  922  git config --global user.name "Ezhil6999"
+  923  git config --global user.email "ezhil6999@gmail.com'
+
+'
+"
+  924  git config --global user.email "ezhil6999@gmail.com
+"
+  925  git config --global user.email "ezhil6999@gmail.com"
+  926  git log
+  927  git show 6bb68f576e2f17415d70d197dc20a7302fc9d660
+  928  vi test1.py 
+  929  git status -s
+  930  git add test1.py 
+  931  git status -s
+  932  git commit -m "second commit "
+  933  git log
+  934  git show ea4c0fdce19c9f5609f212ca1549b53f239fd342
+  935  git log --oneline
+  936  git push origin master
+  937  git remote add name https://github.com/Ezhil6999/STT2.git
+  938  git push name master
+  939  .git/config
+  940  sudo .git/config
+  941* git push name ma
+  942  git push name master
+  943  git log
+  944  vi test1.py 
+  945  git status
+  946  git branch
+  947  git branch dev
+  948  git branch
+  949  git checkout dev
+  950  git branch 
+  951  git commit -ma "hi"
+  952  git commit -am "hi"
+  953  git log
+  954  ls
+  955  cat test1
+  956  cat test1.py
+  957  git branch 
+  958  cat test1
+  959  gitcheckout master
+  960  git checkout master
+  961  cat test1
+  962  cat test1.py
+  963  git push name master
+  964  cat test1
+  965  cat test1.py 
+  966  git branch
+  967  git push name dev
+  968  git checkout dev
+  969* git push name 
+  970  git push origin dev
+  971  git push name dev
+  972  git log\
+  973  ls
+  974  git branch
+  975  cat test1.py 
+  976  git merge master
+  977  git checkout master
+  978  cat test1.py 
+  979  git branch
+  980  git merge dev
+  981  cat test1.py 
+  982  git branch 
+  983  cat test1.py 
+  984  git chekout dev
+  985  git switch dev
+  986  cat test1.py 
+  987  git log
+  988  git mergetool
+  989  git config --global merge.tool vimdiff
+  990  git config --global merge.conflictstyle diff3
+  991  git config --global mergetool.prompt false
+  992  git mergetool
+  993  git branch
+  994  vi test1.py 
+  995  git switch master
+  996  vi test1.py 
+  997  git checkout master
+  998  git branch
+  999  vi test1.py 
+ 1000  git checkout dev
+ 1001  vi test1.py 
+ 1002  git checkout dev
+ 1003  git checkout master
+ 1004  vi test1.py 
+ 1005  git checkout master
+ 1006  ls
+ 1007  cat test1.py 
+ 1008  git checkout dev
+ 1009  cat test1.py 
+ 1010  clear
+ 1011  ls
+ 1012  cat test1.py 
+ 1013  git branch dev
+ 1014  git branch master
+ 1015  git branch
+ 1016  cat test1.py 
+ 1017  git switch master 
+ 1018  cat test1.py 
+ 1019  history
