@@ -24,6 +24,10 @@
   903  git commit -m 'hi'
   904  git push origin main
   905  git status -s
+
+deleting --> git branch -d make_function 
+
+
   906  git init
   907  ls
   908  git add test1.py 
